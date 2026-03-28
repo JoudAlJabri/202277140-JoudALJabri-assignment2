@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joud — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ── Navbar ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <img src="assets/sparkles/whiteSparkle.png" alt="" class="nav-star" />
+      <span>Joud</span>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="#blogs-placeholder">Blogs</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting" id = "hero-greeting-dyncamic"></p>
+      <h1 class="hero-name">Joud</h1>
+      <p class="hero-subtitle">Software Engineer & Tech Enthusiast</p>
+
+      <div class="hero-buttons">
+        <a href="https://github.com/Joudii18" class="hero-btn" target="_blank" rel="noreferrer">
+          <span class="btn-icon github-icon">
+            <img src="assets/icons/github-svgrepo-com.svg" alt="" />
+          </span>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/joud-aljabri-403832248/" class="hero-btn" target="_blank" rel="noreferrer">
+          <span class="btn-icon linkedin-icon">
+            <img src="assets/icons/linkedin-svgrepo-com.svg" alt="" />
+          </span>
+          LinkedIn
+        </a>
+        <a href="mailto:joud.jab@gmail.com" class="hero-btn">
+          <span class="btn-icon email-icon">
+            <img src="assets/icons/email-svgrepo-com.svg" alt="" />
+          </span>
+          Email
+        </a>
+      </div>
+    </div>
+
+    <!-- Decorative sparkles -->
+    <img src="assets/sparkles/pinkStar.png"     alt="" class="sparkle sp-pink-star" />
+    <img src="assets/sparkles/whiteSparkle.png" alt="" class="sparkle sp-white" />
+    <img src="assets/sparkles/yellowSun.png"    alt="" class="sparkle sp-yellow" />
+    <img src="assets/sparkles/greenSparkle.png" alt="" class="sparkle sp-green" />
+  </section>
+
+  <!-- ── Quote of the day API here ── -->
+  <section class="quote" id="qoute">
+  <h2>Quote of the Day</h2>
+  <blockquote id="block-quote">Click to get a quote!</blockquote>
+  <p id="author"></p>
+  <button class= "hero-btn-quote" onclick="getQuote()">  
+    <span class="btn-icon green-sparkle"> <img src="assets/sparkles/greenSparkle.png" alt="" /> 
+    </span>
+    New Quote</button>
+</section>
+
+  <!-- ── About Me ── -->
+  <section class="about" id="about">
+    <h2>About me</h2>
+    <p class="about-text">
+      A Software Engineering student with a strong focus on mobile and web development and a growing passion for Data Science.
+      Experienced in building real-world applications, with active participation in hackathons and
+      extracurricular technical activities that have sharpened my collaboration and leadership skills.<br />
+      Driven to create scalable, user-centered digital products.
+    </p>
+    <ul class="about-list">
+      <li>🚀 Currently learning Full-Stack Development</li>
+      <li>🎮 When I'm not working, you can find me video gaming</li>
+    </ul>
+  </section>
+
+  <!-- ── Tech Stack ── -->
+  <section class="tech-stack" id="tech">
+    <h2>Tech Stack</h2>
+
+    <div class="tech-grid">
+      <div class="tech-card">
+        <h3><span class="green-star">✦</span> Languages</h3>
+        <div class="tags">
+          <span class="tag">Java</span>
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Dart</span>
+        </div>
+      </div>
+
+      <div class="tech-card">
+        <h3><span class="green-star">✦</span> Front-end Development</h3>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">React</span>
+        </div>
+      </div>
+
+      <div class="tech-card">
+        <h3><span class="green-star">✦</span> Back-end Development</h3>
+        <div class="tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Firebase</span>
+        </div>
+      </div>
+
+      <div class="tech-card">
+        <h3><span class="green-star">✦</span> Mobile Development & Tools</h3>
+        <div class="tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Git - GitHub</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative -->
+    <img src="assets/sparkles/pinkCircle.png" alt="" class="tech-dot" />
+    <img src="assets/arrows/wiggleLine.svg"   alt="" class="tech-wiggle" />
+  </section>
+
+  <!-- ── Projects ── -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <p class="projects-subtitle">Here's some of my projects that I have worked on.</p>
+
+    <div class="explore-wrapper">
+      <a href="projects.html" class="explore-btn">Explore More →</a>
+      <img src="assets/arrows/arrow.svg" alt="" class="explore-arrow" />
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Bond -->
+      <div class="project-card bond">
+        <div class="project-image">
+          <img src="assets/images/BondView.png" alt="Bond – Group Habit Tracker screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Bond - Group Habit Tracker</h3>
+          <p>
+            Bond turns your daily goals into shared experiences inside Rooms, where you and
+            your friends, family, or teammates can support each other, check in, and keep
+            your streaks alive together.
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">Flutter</span>
+            <span class="tag pink-tag">Dart</span>
+            <span class="tag pink-tag">Firebase</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Joudii18/Bond-app.git" class="link-btn" target="_blank" rel="noreferrer">
+              <img src="assets/icons/github-svgrepo-com.svg" alt="" /> Github
+            </a>
+            <a href="https://apps.apple.com/sa/app/bond-group-habit-tracker/id6757323090" class="link-btn" target="_blank" rel="noreferrer">
+              ⬇ Download iOS
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horse Racing DB -->
+      <div class="project-card horse">
+        <div class="project-image">
+          <img src="assets/images/HorseDataBaseSystemView.png" alt="Horse Racing Database System screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Horse Riding Database System</h3>
+          <p>
+            This project implements a Horse Racing Database System using MySQL as the
+            backend and a Python (Streamlit) interface as the frontend.
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">MySQL</span>
+            <span class="tag pink-tag">Python (Streamlit)</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Joudii18/Horse-Racing-Database-System-.git" class="link-btn" target="_blank" rel="noreferrer">
+              <img src="assets/icons/github-svgrepo-com.svg" alt="" /> Github
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meras -->
+      <div class="project-card meras">
+        <div class="project-image meras-img">
+          <img src="assets/images/MerasView.png" alt="Meras screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Meras</h3>
+          <p>
+            Calling all High School students 🎓<br />
+            Try real university majors tasks, get feedback from actual college students, and make
+            a confident decision about your future — before committing four years of your life.
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">React</span>
+            <span class="tag pink-tag">Node.js</span>
+            <span class="tag pink-tag">MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#meras-placeholder" class="link-btn coming-soon">
+              Coming Soon!
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section class="contact" id="contact">
+    <h2>Let's Talk!</h2>
+    <p class="contact-subtitle">
+      Have a project in mind? Want to collaborate? Or just want to say hi?
+      Drop me a message and I'll get back to you soon.
+    </p>
+
+    <form class="contact-form">
+      <img src="assets/sparkles/pinkStar.png" alt="" class="form-star" />
+      <input type="text"  placeholder="Your Name"  class="form-input" autocomplete="name" />
+      <input type="email" placeholder="Your Email" class="form-input" autocomplete="email" />
+      <textarea placeholder="Your Message Here" class="form-textarea" rows="6"></textarea>
+      <button type="submit" class="send-btn">✉ Send</button>
+    </form>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <p>Designed and Developed by Joud.</p>
+    <p>Built with HTML, CSS &amp; JS.</p>
+  </footer>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

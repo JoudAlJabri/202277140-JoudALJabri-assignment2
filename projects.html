@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Joud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/sparkles/whiteSparkle.png" alt="" class="nav-star" />
+      <span>Joud</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="index.html#blogs-placeholder">Blogs</a>
+    </div>
+  </nav>
+
+  <!-- ── Page Header ── -->
+  <section class="page-header" id="projects">
+    <h1>Projects</h1>
+    <p class="page-subtitle">I love building and creating new project ideas or designing stuff, whether they’re fun, engaging, or informative!
+<br/>Here's an archive of things that I've worked on.</p>
+  </section>
+
+  
+
+  <!-- ── Filter Bar ── -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="mobile">Mobile</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="python">Python & Data</button>
+    <button class="filter-btn" data-filter="oop">OOP</button>
+    <button class="filter-btn" data-filter="uiux">UI/UX</button>
+  </div>
+
+  <!-- ── Projects Grid ── -->
+  <section class="all-projects">
+    <div class="projects-grid">
+
+      <!-- Bond -->
+      <div class="project-card" data-category="mobile">
+        <div class="project-image">
+          <img src="assets/images/BondView.png" alt="Bond – Group Habit Tracker screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Bond - Group Habit Tracker</h3>
+          <p>
+            Bond turns your daily goals into shared experiences inside Rooms, where you and
+            your friends, family, or teammates can support each other, check in, and keep
+            your streaks alive together.
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">Flutter</span>
+            <span class="tag pink-tag">Dart</span>
+            <span class="tag pink-tag">Firebase</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Joudii18/Bond-app.git" class="link-btn" target="_blank" rel="noreferrer">
+              <img src="assets/icons/github-svgrepo-com.svg" alt="" /> Github
+            </a>
+            <a href= "https://apps.apple.com/sa/app/bond-group-habit-tracker/id6757323090" class="link-btn" target="_blank" rel="noreferrer">
+              ⬇ Download iOS
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horse Racing DB -->
+      <div class="project-card" data-category="python">
+        <div class="project-image">
+          <img src="assets/images/HorseDataBaseSystemView.png" alt="Horse Racing Database System screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Horse Riding Database System</h3>
+          <p>
+            This project implements a Horse Racing Database System using MySQL as the
+            backend and a Python (Streamlit) interface as the frontend.
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">MySQL</span>
+            <span class="tag pink-tag">Python (Streamlit)</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Joudii18/Horse-Racing-Database-System-.git" class="link-btn" target="_blank" rel="noreferrer">
+              <img src="assets/icons/github-svgrepo-com.svg" alt="" /> Github
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meras -->
+      <div class="project-card" data-category="web">
+        <div class="project-image meras-img">
+          <img src="assets/images/MerasView.png" alt="Meras screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Meras</h3>
+          <p>
+            Calling all High School students 🎓<br />
+            Try real university majors tasks, get feedback from actual college students, and make
+            a confident decision about your future — before committing four years of your life.
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">React</span>
+            <span class="tag pink-tag">Node.js</span>
+            <span class="tag pink-tag">MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#meras-placeholder" class="link-btn coming-soon">
+              Coming Soon!
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SWE316 HW1 -->
+      <div class="project-card" data-category="oop">
+        <div class="project-image">
+          <img src="assets/images/RouteMaping.jpeg" alt="Route Mapping System screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Campus Route Visualization Application</h3>
+          <p>
+            This application reads a Term Schedule Excel file and extracts course information, allows the user to enter course CRNs and a weekday,
+            and visualizes the route between diffferent class buildings. Abstraction & Encapsulation, Single Responsibility Principle, and Open-Closed Principle were practiced in this HW.
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">C#</span>
+            <span class="tag pink-tag">Design Patterns</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Joudii18/Campus-Route-Visualization-Application-.git" class="link-btn" target="_blank" rel="noreferrer">
+              <img src="assets/icons/github-svgrepo-com.svg" alt="" /> Github
+            </a>
+          </div>
+        </div>
+      </div>
+
+       <!-- SWE316 HW2 -->
+      <div class="project-card" data-category="oop">
+        <div class="project-image">
+          <img src="assets/images/SWE316.jpeg" alt="SWE316 HW2 screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Folder Visualization Application</h3>
+          <p>
+            This project demonstrates the Composite Design Pattern using a real-world example:
+            A folder contains files and other folders — both should be treated uniformly, supporting two visualization strategies.
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">C#</span>
+            <span class="tag pink-tag">Design Patterns</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Joudii18/Folder-Visualizer-Application.git" class="link-btn" target="_blank" rel="noreferrer">
+              <img src="assets/icons/github-svgrepo-com.svg" alt="" /> Github
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio-->
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <img src="assets/images/Portfolio.jpeg" alt="Portfolio screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Personal Portfolio</h3>
+          <p>
+            I’ve spent time crafting this portfolio to match my personal aesthetic, blending clean design with my own creative vision.
+            Built during web dev & engieering course and developed further afterwards. Personal Blogs coming soon!
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">HTML</span>
+            <span class="tag pink-tag">CSS</span>
+            <span class="tag pink-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/JoudAlJabri/202277140-JoudAljabri-assignment1.git" class="link-btn" target="_blank" rel="noreferrer">
+              <img src="assets/icons/github-svgrepo-com.svg" alt="" /> Github
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Customized Survey -->
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <img src="assets/images/survey.jpeg" alt="Customized Survey screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Customized Survey </h3>
+          <p>
+            Built our own cusomtized survey for a current project we are wokring on, using HTML, CSS, and JavaScript.
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">HTML</span>
+            <span class="tag pink-tag">CSS</span>
+            <span class="tag pink-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Joudii18/Customized-Survey.git" class="link-btn" target="_blank" rel="noreferrer">
+              <img src="assets/icons/github-svgrepo-com.svg" alt="" /> Github
+            </a>
+            <a href= "https://joudii18.github.io/Customized-Survey/" class="link-btn" target="_blank" rel="noreferrer">
+              Visit →
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Data Strcuture Project-->
+      <div class="project-card" data-category="oop">
+        <div class="project-image">
+          <img src="assets/images/DataStructures.png" alt="Data Strucutre screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Data Structure Course Project</h3>
+          <p>
+            Multi-Index Data Structure: Student Records Management System
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">Java</span>
+          
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Joudii18/Data-Structures-Projects.git" class="link-btn" target="_blank" rel="noreferrer">
+              <img src="assets/icons/github-svgrepo-com.svg" alt="" /> Github
+            </a>
+          </div>
+        </div>
+      </div>
+
+       <!--KFUPM StudentHub-->
+      <div class="project-card" data-category="uiux">
+        <div class="project-image">
+          <img src="assets/images/MyFrame.png" alt="KFUPM StudentHub screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>KFUPM StudentHub Prototype</h3>
+          <p>
+            A platform that empowers collage students to collaborate on community service and social impact projects. Performed all practices of software requirements inlcuding requirements elicitation, analysis, prioritization and use case modeling.
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">Figma</span>
+          
+          </div>
+          
+        </div>
+      </div>
+
+      <!--Samana-->
+      <div class="project-card" data-category="uiux">
+        <div class="project-image">
+          <img src="assets/images/MyFrame2.png" alt="Samana screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Samana Prototype</h3>
+          <p> A simple prototype for a hackathon, where the theme was addressing airport issues.
+           
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">Figma</span>
+          
+          </div>
+          
+        </div>
+      </div>
+
+      <!--Vibe-->
+      <div class="project-card" data-category="mobile">
+        <div class="project-image">
+          <img src="assets/images/MyFrame4.png" alt="Vibe screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Vibe Flutter App</h3>
+          <p>
+            A project I made randomly to deal with long uni breaks with friends and have fun. Used ChatGPT API to generate questions with 3 game modes. Still wokring on it to develop it further.
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">Flutter</span>
+            <span class="tag pink-tag">GPT</span>
+          
+          </div>
+          <div class="project-links">
+            <a href="#Vibe-placeholder" class="link-btn coming-soon">
+              Coming Soon!
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--Bayan-->
+      <div class="project-card" data-category="uiux">
+        <div class="project-image">
+          <img src="assets/images/MyFrame5.png" alt="Bayan screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Bayan Quran App Prototype</h3>
+          <p>
+            A simple prototype for a quranic themed hacakthon. Bayan is a doulingo-style Tafseer learning app where you can micro-learn eveyrthing about the Quran and its true meaning.
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">Figma</span>
+          
+          </div>
+        
+        </div>
+      </div>
+
+      <!--SafeDrive-->
+      <div class="project-card" data-category="uiux">
+        <div class="project-image">
+          <img src="assets/images/MyFrame3.png" alt="SafeDrive screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>SafeDrive App Prototype</h3>
+          <p>
+            My first ever prototype! It was for KSU health innovation hackathon.
+          </p>
+          <div class="tags">
+            <span class="tag pink-tag">Figma</span>
+          
+          </div>
+          
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!--  Footer -->
+  <footer class="footer">
+    <p>Designed and Developed by Joud.</p>
+    <p>Built with HTML, CSS &amp; JS.</p>
+  </footer>
+
+  <script>
+    // Navbar scroll shadow
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Project filtering
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.project-card').forEach(card => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.style.display = match ? '' : 'none';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

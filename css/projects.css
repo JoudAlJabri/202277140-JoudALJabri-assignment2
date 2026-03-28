@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+/* ── Reset & Variables ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg:         #1e1e1e;
+  --pink:       #FFA5C5;
+  --green:      #BEEBA9;
+  --card-bg:    #252525;
+  --text:       #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.7);
+  --border:     rgba(255, 255, 255, 0.2);
+  --font:       'Bellefair', serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 5%;
+  background: rgba(30, 30, 30, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.navbar.scrolled {
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.4);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: var(--font);
+  font-size: 1.4rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-star {
+  width: 25px;
+  height: 25px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-family: var(--font);
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--pink);
+}
+
+/* Page Header  */
+.page-header {
+  padding: 9rem 5% 2.5rem;
+}
+
+.page-header h1 {
+  font-family: var(--font);
+  font-size: clamp(2rem, 4vw, 5rem);
+  color: var(--text);
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+}
+
+.page-subtitle {
+  font-family: var(--font);
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+/* ── Filter Bar ── */
+.filter-bar {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  padding: 0 5% 2rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.3rem;
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.filter-btn:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text);
+}
+
+.filter-btn.active {
+  background: rgba(255, 165, 197, 0.15);
+  border-color: var(--pink);
+  color: var(--pink);
+}
+
+
+/* ── Projects Grid ── */
+.all-projects {
+  padding: 2rem 5% 6rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1100px;
+}
+
+/* ── Project Card ── */
+.project-card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.meras-img img {
+  object-fit: cover;
+  height: 200px;
+}
+
+.project-body {
+  padding: 1.1rem 1.3rem 1.3rem;
+}
+
+.project-card h3 {
+  font-family: var(--font);
+  font-size: 1.05rem;
+  color: var(--text);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-family: var(--font);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 0.9rem;
+}
+
+/* ── Tags ── */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.25rem 0.85rem;
+  border-radius: 2rem;
+  font-family: var(--font);
+  font-size: 0.78rem;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  background: transparent;
+  white-space: nowrap;
+}
+
+.pink-tag {
+  border-color: var(--pink);
+  color: var(--pink);
+}
+
+/* ── Project Links ── */
+.project-links {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.9rem;
+}
+
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  color: var(--text);
+  text-decoration: none;
+  font-family: var(--font);
+  font-size: 0.82rem;
+  background: transparent;
+  transition: background 0.2s;
+}
+
+.link-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.link-btn img {
+  width: 14px;
+  height: 14px;
+  filter: invert(1);
+}
+
+.coming-soon {
+  cursor: default;
+  border-color: rgba(255, 255, 255, 0.15);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+/* ── Footer ── */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  font-family: var(--font);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.45);
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.footer p {
+  margin: 0.15rem 0;
+}
+
+/*  Responsive  */
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
